@@ -42,9 +42,19 @@ System.out.println("No se puede vaciar esa cantidad de litros");
 }
 
 
+//Calcular impuesto
+@Override
+public double calcularImpuesto(){
+if(getAño() < 2010){
+return 0;
+}else{
+return getPrecio() * 0.015;
+}
+}
 
-
-
-
+//Modificar el año del automovil
+public void modificarAño(int nuevoAño){
+setAño(nuevoAño);
+}
 
 }
