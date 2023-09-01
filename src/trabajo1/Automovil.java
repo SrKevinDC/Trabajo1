@@ -15,9 +15,18 @@ System.out.println("Cantidad de puertas correctas");
 }else{
 throw new RuntimeException("La cantidad de puertas es impar");
 }
+}
 
 //cargar estanque del automovil
+@Override
 public void cargarEstanque(int litros){
+int disponible = getCapacidadEstanque() - getNivelEstanque();
+if(litros <= disponible){
+setNivelEstanque(getNivelEstanque() + litros);
+System.out.println(litros + " Litros se han cargado");
+}else{
+System.out.println("Excede la capacidad dele estanque");
+}
 }
 
 
@@ -26,11 +35,4 @@ public void vaciarEstanque(int litros){
 int minimo = 15;
 
 }
-}
-  
-
-
-
-
-  
 }
