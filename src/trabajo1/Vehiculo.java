@@ -68,8 +68,8 @@ System.out.println("Nivel del estanque: " + nivelEstanque);
 
 //método para cargar con bencina el vehiculo
 public void cargarEstanque(int litros){
-int capacidadDisponible = capacidadEstanque - nivelEstanque;
-if(litros <= capacidadDisponible){
+int disponible = capacidadEstanque - nivelEstanque;
+if(litros <= disponible){
 nivelEstanque += litros;
 System.out.println("Se cargaron " + litros + " litros al estanque");
 }else{
