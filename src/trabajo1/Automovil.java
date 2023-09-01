@@ -33,6 +33,18 @@ System.out.println("Excede la capacidad dele estanque");
 //vaciar estanque del automovil}
 public void vaciarEstanque(int litros){
 int minimo = 15;
-
+if(getNivelEstanque() - litros <= minimo){
+setNivelEstanque(getNivelEstanque()- litros);
+System.out.println(litros + " litros se han vaciado");
+}else{
+System.out.println("No se puede vaciar esa cantidad de litros");
 }
+}
+
+
+
+
+
+
+
 }
