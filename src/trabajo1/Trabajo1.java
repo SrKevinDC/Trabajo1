@@ -24,7 +24,9 @@ automovil1.imprimirDatos();
 }catch (Exception e){
 System.out.println("ERROR: " + e.getMessage());
 }
-
+System.out.println("");
+System.out.println("***************************************************");
+System.out.println("");
 Motocicleta motocicleta1 = new Motocicleta(4,"kawasaki",2008,40,5,6);
 motocicleta1.vaciarEstanque(9);
 motocicleta1.imprimirDatos();
