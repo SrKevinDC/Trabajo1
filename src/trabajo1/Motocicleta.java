@@ -24,4 +24,17 @@ public void imprimirDatos(){
 super.imprimirDatos();
 System.out.println("cilindrada: " + cilindrada);
 }
+
+//vaciar estanque de motocicleta
+public void vaciarEstanque(int litros){
+int minimo = 5;
+if(getNivelEstanque() - litros <= minimo){
+setNivelEstanque(getNivelEstanque()- litros);
+System.out.println(litros + " litros se han vaciado");
+}else{
+System.out.println("No se puede vaciar esa cantidad de litros");
+}
+}
+
+
 }
