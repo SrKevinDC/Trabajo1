@@ -13,7 +13,7 @@ private int cantidadPuertas;
 if(cantidadPuertas % 2 == 0){
 System.out.println("Cantidad de puertas correctas");
 }else{
-throw new Exception("La cantidad de puertas es impar");
+throw new IllegalArgumentException("La cantidad de puertas es impar");
 }
 }
 
