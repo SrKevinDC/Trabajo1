@@ -13,7 +13,7 @@ private int cantidadPuertas;
 if(cantidadPuertas % 2 == 0){
 System.out.println("Cantidad de puertas correctas");
 }else{
-throw new RuntimeException("La cantidad de puertas es impar");
+throw new Exception("La cantidad de puertas es impar");
 }
 }
 
@@ -25,7 +25,7 @@ if(litros <= disponible){
 setNivelEstanque(getNivelEstanque() + litros);
 System.out.println(litros + " Litros se han cargado");
 }else{
-System.out.println("Excede la capacidad dele estanque");
+System.out.println("Excede la capacidad del estanque");
 }
 }
 

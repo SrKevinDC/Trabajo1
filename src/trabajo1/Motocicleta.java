@@ -6,7 +6,8 @@ private int cilindrada;
 
 //constructor + getters y setters de cilindrada
 
-    public Motocicleta(int cilindrada, String marca, int año, double precio, int capacidadEstanque, int nivelEstanque) {
+    public Motocicleta(int cilindrada, String marca, int año, double precio,
+ int capacidadEstanque, int nivelEstanque) {
         super(marca, año, precio, capacidadEstanque, nivelEstanque);
         this.cilindrada = cilindrada;
     }
