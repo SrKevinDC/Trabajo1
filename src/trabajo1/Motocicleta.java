@@ -33,7 +33,7 @@ if(getNivelEstanque() - litros <= minimo){
 setNivelEstanque(getNivelEstanque()- litros);
 System.out.println(litros + " litros se han vaciado");
 }else{
-System.out.println("No se puede vaciar esa cantidad de litros");
+System.out.println("No se puede vaciar esa cantidad del estanque");
 }
 }
 
